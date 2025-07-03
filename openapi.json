@@ -5083,7 +5083,7 @@
     "/history/clear_all_history": {
       "get": {
         "tags": [
-          "WorkerManagement"
+          "History"
         ],
         "operationId": "DANGERClearAllHistory",
         "responses": {
@@ -9994,7 +9994,7 @@
           },
           "updated_at": {
             "description": "# Last Updated",
-            "default": "2025-07-03T03:17:44.240779+00:00",
+            "default": "2025-07-03T06:09:38.999011+00:00",
             "type": "string",
             "format": "date-time"
           }
@@ -10122,7 +10122,7 @@
           },
           "updated_at": {
             "description": "# Updated",
-            "default": "2025-07-03T03:17:44.240571+00:00",
+            "default": "2025-07-03T06:09:38.998805+00:00",
             "type": "string",
             "format": "date-time"
           }
@@ -10322,7 +10322,7 @@
             "format": "date-time"
           },
           "updated_at": {
-            "default": "2025-07-03T03:17:44.240661+00:00",
+            "default": "2025-07-03T06:09:38.998897+00:00",
             "type": "string",
             "format": "date-time"
           }
@@ -10381,7 +10381,7 @@
             "format": "date-time"
           },
           "updated_at": {
-            "default": "2025-07-03T03:17:44.240684+00:00",
+            "default": "2025-07-03T06:09:38.998919+00:00",
             "type": "string",
             "format": "date-time"
           }
@@ -13230,17 +13230,22 @@
           "is_finished"
         ]
       }
+    },
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      },
+      "CookieAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Cookie"
+      }
     }
   },
   "tags": [
     {
-      "name": "Catalogs"
-    },
-    {
       "name": "Context"
-    },
-    {
-      "name": "Credentials"
     },
     {
       "name": "Identity"
@@ -13253,9 +13258,6 @@
     },
     {
       "name": "Profile"
-    },
-    {
-      "name": "QueryHistory"
     },
     {
       "name": "Root"
